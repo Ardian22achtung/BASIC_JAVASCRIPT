@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung</title>
+</head>
+<body>
+    <button id="demo">Hitung</button>
+
+    <script>
+        //calling the function in window.onload to make sure the HTM
+        window.onload = function()  {
+            var btn = document.getElementByld("demo");
+            btn.addEventListener("click", myFunction);
+
+            function myFunction() {
+                alert("Luas Persegi Panjang")
+                var panjang = prompt("Masukkan Panjang")
+                var hasil = alert(panjang * lebar)
+                btn.removeEventListener("click". myFunction);
+                return hasil
+            }
+        };
+    </script>
+</body>
+</html>
