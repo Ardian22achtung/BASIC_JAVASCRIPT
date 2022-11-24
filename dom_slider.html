@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <button onclick="next()">next</button>
+        <img src="panther.jpg" width="1024px" height="700px" alt="images" id="slider">
+        <button onclick="prev()">prev</button>
+    <script>
+        var images = ['osamas.jpg', 'WTC.jpg', 'jesus.jpg', 'nigga.jpg', 'rus_troops.jpg', 'waffen_ss.jpg', 'poetin.jpg', 'isis.jpg', 'real_jesus.jpg'];
+        var num = 0;
+        function next()
+        {
+            var slider = document.getElementById('slider');
+            num+=1;
+            if (num>=images.length)
+            {
+                num = 0;
+            }
+            slider.src = images[num];
+        }
+
+        function prev()
+        {
+            var slider = document.getElementById('slider');
+            num-=1;
+            if (num<0)
+            {
+                num = images.length-1;
+            }
+            slider.src = images[num]
+        }
+    </script>
+</body>
+</html>
